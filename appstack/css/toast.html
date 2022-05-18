@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="col">
+        <button class="btn-pimary" id="liveToastBtn">boss</button>
+        <button id="">
+            close
+        </button>
+        <div class="toast" data-bs-dismiss="#salomcha">
+            <div class="toast-header">
+                <h6>bootstrap</h6>
+                <small>10 m ego</small>
+                <button class="btn-close" id="salomcha2"></button>
+            </div>
+            <div class="toast-body">
+                <h1>salom john</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <button class="text-light text-uppercase bg-primary  border-0  px-4 py-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                call to action
+             </button>
+             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                 <div style="background-color: blue;" class="offcanvas-header ">
+                    <h5 style="color: #fff" class="offcanvas-title" text-light id="offcanvasExampleLabel">lorem</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                   </div>
+                 <div class="offcanvas-body">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis facere eius quaerat repellat sed quae, ut perferendis omnis nisi, fuga quas natus, obcaecati distinctio officia dolorum maxime molestias quidem laboriosam delectus numquam maiores excepturi tempore consequatur quo? Quis enim ea, molestiae facilis cum odio pariatur deserunt molestias aperiam doloremque nulla aliquid quia distinctio, in veritatis voluptatibus alias, ad eum? Sint, sequi. Sint esse aut exercitationem repellendus cupiditate eaque? Et at, id fugiat adipisci numquam suscipit aliquam perspiciatis, magnam molestias provident reiciendis voluptate doloribus aut doloremque quisquam similique fuga quis facere assumenda quas deleniti saepe quod? Tempora minus voluptates odit perspiciatis.</p>
+                </div>
+             </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var toastTrigger = document.getElementById("liveToastBtn");
+        var toastClose = document.getElementById("liveToastBtnClose");
+        var toastLiveExample = document.getElementById("liveToast");
+        var toast = new bootstrap.Toast(toastLiveExample);
+        toastClose.onclick = function () {
+            toast.dispose();
+        };
+        toastTrigger.addEventListener("click", function () {
+            toast.show();
+        });
+    </script>
+</body>
+
+</html>
